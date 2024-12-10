@@ -13,11 +13,90 @@ img {
     max-width: 100%;
 }
 
+.custom-form-control {
+    direction: rtl;
+    box-shadow: none;
+    border-radius: 10px;
+    min-height: 45px;
+    vertical-align: middle;
+    border: 1px solid #AEAEAE;
+    color: var(--primary-color);
+}
+
+.custom-form-control:focus {
+    box-shadow: none;
+    color: var(--primary-color);
+    border: 2px solid #10305038;
+}
+
+.custom-form-control::placeholder {
+    color: #06222F54;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .features .title-box .title,
 .partners .title-box .title,
-.testimonials .title-box .title {
+.testimonials .title-box .title ,
+.website-control .title-box .title ,
+.donations .title-box .title ,
+.faq .title-box .title {
     font-size: 28px;
     font-weight: 600;
+}
+
+.modal .modal-dialog {
+    max-width: 600px;
+}
+
+.modal .modal-content {
+    border-radius: 15px;
+    padding-inline: 30px;
+    border-top: 15px solid #AC1111;
+    color: var(--primary-color);
+}
+
+.modal .modal-header {
+    padding-inline: 0;
+    border-bottom: 2px solid #10305038;
+}
+
+.modal .modal-header .btn-close {
+    background-image: unset;
+    opacity: 1;
+}
+
+.modal .modal-header .btn-close svg {
+    width: 20px;
+}
+
+.modal .modal-header .btn-close svg path {
+    fill: var(--primary-color);
+}
+
+.modal .modal-header h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.modal .modal-body {
+    padding-inline: 0;
+}
+
+.modal .modal-footer {
+    padding-inline: 0;
+    border: none;
+}
+
+.modal .modal-footer .submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 13px 30px;
 }
 
 /*************************************************************************************************************************************************************************/
@@ -27,9 +106,10 @@ img {
 header {
     background-image: url('../images/header_background.png');
     background-size: cover;
-    background-position-y: top;
+    background-position-y: bottom;
     background-position-x: center;
     color: var(--primary-color);
+    padding-bottom: 160px;
     margin-bottom: 50px;
 }
 
@@ -63,20 +143,20 @@ header .navbar .navbar-nav:first-of-type .nav-item {
     margin-left: 30px;
 }
 
-header .navbar .navbar-nav:first-of-type .nav-item .nav-link  {
+header .navbar .navbar-nav:first-of-type .nav-item .nav-link {
     color: var(--dark-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-header .navbar .navbar-nav:first-of-type .nav-item .nav-link.active ,
-header .navbar .navbar-nav:first-of-type .nav-item:hover .nav-link  {
+header .navbar .navbar-nav:first-of-type .nav-item .nav-link.active,
+header .navbar .navbar-nav:first-of-type .nav-item:hover .nav-link {
     color: var(--primary-color);
     position: relative;
 }
 
-header .navbar .navbar-nav:first-of-type .nav-item .nav-link.active:before  ,
-header .navbar .navbar-nav:first-of-type .nav-item:hover .nav-link:before  {
+header .navbar .navbar-nav:first-of-type .nav-item .nav-link.active:before,
+header .navbar .navbar-nav:first-of-type .nav-item:hover .nav-link:before {
     position: absolute;
     content: '';
     width: 50px;
@@ -100,32 +180,111 @@ header .navbar .navbar-nav:first-of-type .nav-item.dropdown .dropdown-menu .drop
 header .navbar .navbar-nav:last-of-type .nav-item:first-of-type .nav-link {
     color: var(--dark-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
     color: var(--primary-color);
     font-weight: bold;
+    font-size: 17px;
+}
+
+header .hero {
+    margin-top: 40px;
+}
+
+header .hero .hero-box .box .content-box {
+    color: var(--white-color);
+
+}
+
+header .hero .hero-box .content-box .title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+header .hero .hero-box .content-box .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+header .hero .hero-box .content-box .action {
+    display: flex;
+    align-items: center;
+}
+
+header .hero .hero-box .content-box .action a {
+    min-width: 200px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+}
+
+header .hero .hero-box .content-box .action a:first-of-type {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+header .hero .hero-box .content-box .action a:last-of-type {
+    background-color: transparent;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+header .hero .hero-box .content-box .action a:last-of-type:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+header .hero .hero-box .image-box img {
+    max-height: 350px;
+    margin-right: auto;
+    width: auto;
+}
+
+#joinUsModal .modal-body .description {
     font-size: 18px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: var(--dark-color);
 }
 
 @media (max-width: 991.98px) {
+    header {
+        padding-bottom: 220px;
+    }
+
     header .navbar .navbar-nav .nav-item {
         margin-left: unset !important;
         margin-bottom: 20px;
         text-align: center;
     }
+
     header .navbar .navbar-nav .nav-item .nav-link {
         text-align: center;
     }
+
     header .navbar .navbar-nav:last-of-type .nav-item .nav-link {
         justify-content: center;
         flex-direction: row-reverse;
     }
+
     header .navbar .navbar-nav:last-of-type .nav-item .nav-link svg {
         margin-right: 0 !important;
         margin-left: 10px;
         text-align: right;
+    }
+
+    header .hero .hero-box .content-box .action {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    header .hero .hero-box .image-box img {
+        margin-left: auto;
     }
 }
 
@@ -191,6 +350,73 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
     font-weight: 400;
 }
 
+.features .slider-box {
+    margin-bottom: 70px;
+}
+
+.features .slider-box .right-box .owl-theme .owl-dots {
+    margin-top: 20px;
+}
+
+.features .slider-box .right-box .owl-theme .owl-dots .owl-dot span {
+    background-color: #D9D9D9;
+    width: 12px;
+    height: 12px;
+}
+
+.features .slider-box .right-box .owl-theme .owl-dots .owl-dot.active span,
+.features .slider-box .right-box .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: var(--primary-color);
+}
+
+.features .slider-box .left-box .card {
+    box-shadow: 0 15px 45px #A7A7A74D;
+    border: none;
+    border-radius: 20px;
+}
+
+.features .slider-box .left-box .card .card-body {
+    padding: 30px;
+}
+
+.features .slider-box .left-box .card .card-body .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px !important;
+    cursor: pointer;
+    border-radius: 5px 10px 10px 5px;
+    text-decoration: none;
+}
+
+.features .slider-box .left-box .card .card-body .item.active,
+.features .slider-box .left-box .card .card-body .item:hover {
+    background-color: var(--gray-color);
+}
+
+.features .slider-box .left-box .card .card-body .item:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.features .slider-box .left-box .card .card-body .item .icon {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .slider-box .left-box .card .card-body .item .title {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
 /*************************************************************************************************************************************************************************/
 /**** Start Partners Section ****/
 /*************************************************************************************************************************************************************************/
@@ -213,6 +439,20 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
 .partners .partners-box .partner img {
     height: 100px;
     width: auto;
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start Website Control Section ****/
+/*************************************************************************************************************************************************************************/
+
+.website-control {
+    margin-bottom: 70px;
+}
+
+.website-control .website-control-box .item img {
+    width: auto;
+    margin-inline: auto;
+    max-height: 500px;
 }
 
 /*************************************************************************************************************************************************************************/
@@ -327,15 +567,110 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
 }
 
 .testimonials .owl-theme .owl-dots .owl-dot span {
-    background-color: var(--primary-color);
-    opacity: 0.67;
+    background-color: #D9D9D9;
     width: 12px;
     height: 12px;
 }
 
 .testimonials .owl-theme .owl-dots .owl-dot.active span,
 .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    opacity: 1;
+    background-color: var(--primary-color);
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start Donations Section ****/
+/*************************************************************************************************************************************************************************/
+
+.donations {
+    margin-bottom: 70px;
+    padding-top: 150px;
+    position: relative;
+}
+
+.donations .top-svg {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    max-height: 100px;
+}
+
+.donations .right-box .donations-box .donation .description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.donations .right-box .donations-box .donation .donation-btn {
+    padding: 8px 20px;
+    min-width: 220px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.donations .left-box .item {
+   text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 45px #A7A7A74D;
+    padding: 25px;
+    border-radius: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.donations .left-box .item.active ,
+.donations .left-box .item:hover {
+   border: 3px solid var(--primary-color);
+}
+
+.donations .left-box .item .image-box {
+    padding: 12px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-inline: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.donations .left-box .item .title {
+font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+
+
+/*************************************************************************************************************************************************************************/
+/**** Start Contact Section ****/
+/*************************************************************************************************************************************************************************/
+
+.contact-us {
+    margin-block: 70px;
+}
+
+.contact-us .right-box .title-box .title {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.contact-us .right-box form .submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.contact-us .left-box img {
+    max-height: 500px;
 }
 
 /*************************************************************************************************************************************************************************/
@@ -396,12 +731,15 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .accordion-button .fa-minus {
     display: none;
 }
+
 .accordion-button:not(.collapsed) .fa-plus {
     display: none;
 }
+
 .accordion-button:not(.collapsed) .fa-minus {
     display: inline;
 }
@@ -418,6 +756,7 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
 .user-manual {
     margin-top: 60px;
 }
+
 .user-manual .box {
     background-image: url("../images/user_manual_banner.png");
     background-size: cover;
@@ -429,14 +768,17 @@ header .navbar .navbar-nav:last-of-type .nav-item:last-of-type .nav-link {
     display: flex;
     align-items: center;
 }
+
 .user-manual .box h2 {
     font-size: 20px;
     font-weight: bold;
 }
+
 .user-manual .box p {
     font-size: 18px;
     line-height: 1.6;
 }
+
 .user-manual .box a {
     border-color: var(--white-color);
     color: var(--white-color);
