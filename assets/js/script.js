@@ -137,4 +137,37 @@ $(document).ready(function () {
         $(this).addClass('active').closest('.item-box').siblings().find('.item').removeClass('active')
         donations_slider_owl.trigger('to.owl.carousel', [index, 300]);
     });
+
+    let current_box_id = parseInt($(`#user_manual_page .content .left-box .card .card-body .box.active`).data('index'));
+
+    $('#user_manual_page .content .right-box .card .card-body .item').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active')
+        const id = $(this).data('id');
+        let boxes_count = $(`#user_manual_page .content .left-box .card .card-body .box`).length;
+        let target_box = $(`#user_manual_page .content .left-box .card .card-body ${id}`);
+        target_box.addClass('active').siblings().removeClass('active');
+        let current_id = target_box.data('index');
+        current_box_id = current_id
+
+        $('#user_manual_page .content .left-box .card .card-body .actions-box button[data-type="prev"]').prop('disabled', (current_box_id < 2));
+        $('#user_manual_page .content .left-box .card .card-body .actions-box button[data-type="next"]').prop('disabled', (current_box_id == boxes_count));
+    });
+
+    $('#user_manual_page .content .left-box .card .card-body .actions-box button').on('click', function () {
+        const type =  $(this).data('type');
+        let boxes_count = $(`#user_manual_page .content .left-box .card .card-body .box`).length;
+
+        if (type == 'prev') {
+            $(`#user_manual_page .content .left-box .card .card-body #manual${current_box_id - 1}`).addClass('active').siblings().removeClass('active');
+            $(`#user_manual_page .content .right-box .card .card-body .item[data-id="#manual${current_box_id - 1}"]`).addClass('active').siblings().removeClass('active');
+            current_box_id--;
+        } else {
+            $(`#user_manual_page .content .left-box .card .card-body #manual${current_box_id + 1}`).addClass('active').siblings().removeClass('active');
+            $(`#user_manual_page .content .right-box .card .card-body .item[data-id="#manual${current_box_id + 1}"]`).addClass('active').siblings().removeClass('active');
+            current_box_id++;
+        }
+console.log(current_box_id)
+        $('#user_manual_page .content .left-box .card .card-body .actions-box button[data-type="prev"]').prop('disabled', (current_box_id < 2));
+        $('#user_manual_page .content .left-box .card .card-body .actions-box button[data-type="next"]').prop('disabled', (current_box_id == boxes_count));
+    });
 });

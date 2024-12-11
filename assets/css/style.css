@@ -40,9 +40,9 @@ img {
 
 .features .title-box .title,
 .partners .title-box .title,
-.testimonials .title-box .title ,
-.website-control .title-box .title ,
-.donations .title-box .title ,
+.testimonials .title-box .title,
+.website-control .title-box .title,
+.donations .title-box .title,
 .faq .title-box .title {
     font-size: 28px;
     font-weight: 600;
@@ -97,6 +97,31 @@ img {
     color: var(--white-color);
     text-align: center;
     padding: 13px 30px;
+}
+
+.breadcrumb {
+    margin-bottom: 30px;
+}
+
+.breadcrumb .breadcrumb-item {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free", sans-serif ;
+    content: "\f104";
+    color: var(--primary-color);
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: var(--primary-color);
+}
+
+.breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
 }
 
 /*************************************************************************************************************************************************************************/
@@ -613,7 +638,7 @@ header .hero .hero-box .image-box img {
 }
 
 .donations .left-box .item {
-   text-align: center;
+    text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 15px 45px #A7A7A74D;
     padding: 25px;
@@ -622,9 +647,9 @@ header .hero .hero-box .image-box img {
     text-decoration: none;
 }
 
-.donations .left-box .item.active ,
+.donations .left-box .item.active,
 .donations .left-box .item:hover {
-   border: 3px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 .donations .left-box .item .image-box {
@@ -641,11 +666,10 @@ header .hero .hero-box .image-box img {
 }
 
 .donations .left-box .item .title {
-font-weight: 700;
+    font-weight: 700;
     font-size: 18px;
     color: var(--primary-color);
 }
-
 
 
 /*************************************************************************************************************************************************************************/
@@ -873,3 +897,242 @@ footer .box .payment-image {
     margin-inline: auto;
 }
 
+/*************************************************************************************************************************************************************************/
+/**** Start Show Page Section ****/
+/*************************************************************************************************************************************************************************/
+
+#show_page header {
+    padding-bottom: 0;
+}
+
+#show_page header .hero-image {
+    position: relative;
+    bottom: -50px;
+}
+
+#show_page header .hero-image .image-box img {
+    max-height: 480px;
+    width: 100%;
+}
+
+#show_page .content .card {
+    box-shadow: 0 4px 22px 0 #0000001F;
+    border: none;
+    border-radius: 20px;
+    margin-inline: 40px;
+    position: relative;
+    bottom: 50px;
+}
+
+#show_page .content .card .card-body {
+    padding: 50px 30px;
+}
+
+#show_page .content .card .card-body .title {
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+#show_page .content .card .card-body .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #565251;
+}
+
+#show_page .content .card .card-body .date svg {
+    margin-left: 10px;
+}
+
+#show_page .content .card .card-body .description {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0;
+}
+
+#show_page footer {
+    margin-top: 30px;
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start Show Page Section ****/
+/*************************************************************************************************************************************************************************/
+
+#user_manual_page header {
+    padding-bottom: 60px;
+}
+
+#user_manual_page header .hero-search .hero-box .title {
+    margin-block: 130px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#user_manual_page header .hero-search .hero-box .search {
+    margin-inline: auto;
+    max-width: 550px;
+    position: relative;
+}
+
+#user_manual_page header .hero-search .hero-box .search svg {
+    color: var(--dark-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+#user_manual_page header .hero-search .hero-box .search .custom-form-control {
+    min-height: 55px;
+    border-radius: 15px;
+    padding-inline: 20px;
+}
+
+#user_manual_page header .hero-search .hero-box .search .custom-form-control::placeholder {
+    color: #665C5F;
+    font-weight: bold;
+}
+
+#user_manual_page .content .card {
+    box-shadow: 0 4px 22px 0 #0000001F;
+    border: none;
+    border-radius: 20px;
+}
+
+#user_manual_page .content .card .card-body {
+    padding: 30px;
+}
+
+#user_manual_page .content .right-box .card .card-body .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-radius: 5px 10px 10px 5px;
+    text-decoration: none;
+}
+
+#user_manual_page .content .right-box .card .card-body .item.active,
+#user_manual_page .content .right-box .card .card-body .item:hover {
+    background-color: var(--gray-color);
+}
+
+#user_manual_page .content .right-box .card .card-body .item:last-of-type {
+    margin-bottom: 0;
+}
+
+#user_manual_page .content .right-box .card .card-body .item .icon {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user_manual_page .content .right-box .card .card-body .item .title {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+#user_manual_page .content .left-box .card .card-body .box {
+    display: none;
+}
+
+#user_manual_page .content .left-box .card .card-body .box.active {
+    display: block;
+}
+
+#user_manual_page .content .left-box .card .card-body .box .title {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#user_manual_page .content .left-box .card .card-body .box .accordion-item {
+    border: none;
+    border-bottom: 1px solid #75419C24;
+    border-radius: 0;
+}
+
+#user_manual_page .content .left-box .card .card-body .box .accordion-item .accordion-header .accordion-button {
+    background-color: #ffffff;
+    box-shadow: none;
+    padding-inline: 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding-block: 23px;
+}
+
+#user_manual_page .content .left-box .card .card-body .box .accordion-item .accordion-header .accordion-button:after {
+    background-image: none;
+}
+
+#user_manual_page .content .left-box .card .card-body .box .accordion-item .accordion-header .accordion-button svg {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 27px;
+    height: 27px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#user_manual_page .content .left-box .card .card-body .box .accordion-item .accordion-body {
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: var(--dark-color);
+    padding: 0 0 22px;
+}
+
+#user_manual_page .content .left-box .card .card-body .actions-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#user_manual_page .content .left-box .card .card-body .actions-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#user_manual_page .content .left-box .card .card-body .actions-box button svg {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+}
+
+#user_manual_page .content .left-box .card .card-body .actions-box button:first-of-type svg {
+    margin-left: 10px;
+}
+
+#user_manual_page .content .left-box .card .card-body .actions-box button:last-of-type svg {
+    margin-right: 10px;
+}

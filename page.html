@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #172755;
+            --white-color: #ffffff;
+            --gray-color: #EEEEEE;
+            --dark-color: #141414;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+<div id="show_page">
+    <!--Start Header-->
+    <header class="pt-4">
+        <div class="container-fluid px-4">
+            <!--Start Navbar Section-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="Bootstrap">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">شركاء النجاح</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الاخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الاسئلة الشائعة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">دليل المستخدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">اتصل بنا</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    قائمه منسدله
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">تيست 1</a></li>
+                                    <li><a class="dropdown-item" href="#">تيست 2</a></li>
+                                    <li><a class="dropdown-item" href="#">تيست 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    اشترك الان
+                                    <svg class="ms-2" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_0_1237)">
+                                            <path d="M8.11176 7.73333C9.17842 7.73333 10.0851 7.35111 10.8318 6.58667C11.5784 5.82222 11.9518 4.90667 11.9518 3.84C11.9518 2.77333 11.5784 1.86667 10.8318 1.12C10.0851 0.373333 9.17842 0 8.11176 0C7.04509 0 6.13842 0.373333 5.39176 1.12C4.64509 1.86667 4.27176 2.77333 4.27176 3.84C4.27176 4.90667 4.64509 5.82222 5.39176 6.58667C6.13842 7.35111 7.04509 7.73333 8.11176 7.73333ZM6.03176 1.81333C6.60065 1.24444 7.28509 0.96 8.08509 0.96C8.88509 0.96 9.57842 1.24444 10.1651 1.81333C10.7518 2.38222 11.0451 3.06667 11.0451 3.86667C11.0451 4.66667 10.7606 5.35111 10.1918 5.92C9.62287 6.48889 8.92954 6.77333 8.11176 6.77333C7.29398 6.77333 6.60065 6.48889 6.03176 5.92C5.46287 5.35111 5.17842 4.66667 5.17842 3.86667C5.17842 3.06667 5.46287 2.38222 6.03176 1.81333ZM14.8318 12.32C14.8318 12 14.7962 11.6533 14.7251 11.28C14.654 10.9067 14.5651 10.5689 14.4584 10.2667C14.3518 9.96444 14.2095 9.65333 14.0318 9.33333C13.854 9.01333 13.6495 8.73778 13.4184 8.50667C13.1873 8.27556 12.894 8.08889 12.5384 7.94667C12.1829 7.80444 11.7918 7.73333 11.3651 7.73333C11.2229 7.73333 11.0095 7.82222 10.7251 8L10.0851 8.42667C9.87176 8.56889 9.58731 8.69333 9.23176 8.8C8.8762 8.90667 8.52954 8.96 8.19176 8.96C7.85398 8.96 7.50731 8.90667 7.15176 8.8C6.7962 8.69333 6.52954 8.56889 6.35176 8.42667L5.65842 8C5.40954 7.82222 5.21398 7.73333 5.07176 7.73333C4.64509 7.73333 4.25398 7.80444 3.89842 7.94667C3.54287 8.08889 3.24065 8.27556 2.99176 8.50667C2.74287 8.73778 2.52954 9.01333 2.35176 9.33333C2.17398 9.65333 2.03176 9.97333 1.92509 10.2933C1.81842 10.6133 1.73842 10.9511 1.68509 11.3067C1.63176 11.6622 1.5962 11.9911 1.57842 12.2933C1.56065 12.5956 1.55176 12.9067 1.55176 13.2267C1.55176 14.08 1.80954 14.7556 2.32509 15.2533C2.84065 15.7511 3.52509 16 4.37842 16H12.0584C12.8762 16 13.5518 15.7511 14.0851 15.2533C14.6184 14.7556 14.8851 14.08 14.8851 13.2267C14.8851 12.9067 14.8673 12.6044 14.8318 12.32ZM13.4451 14.56C13.0895 14.88 12.6273 15.04 12.0584 15.04H4.37842C3.77398 15.04 3.30287 14.88 2.96509 14.56C2.62731 14.24 2.45842 13.7956 2.45842 13.2267L2.51176 12.3733C2.51176 12.0889 2.54731 11.7867 2.61842 11.4667C2.68954 11.1467 2.76065 10.8533 2.83176 10.5867C2.90287 10.32 3.00954 10.0622 3.15176 9.81333C3.29398 9.56444 3.45398 9.36 3.63176 9.2C3.80954 9.04 4.01398 8.91556 4.24509 8.82667C4.4762 8.73778 4.7162 8.69333 4.96509 8.69333L5.81842 9.22667C6.10287 9.40444 6.45842 9.55556 6.88509 9.68C7.31176 9.80444 7.74731 9.86667 8.19176 9.86667C8.6362 9.86667 9.08065 9.80444 9.52509 9.68C9.96954 9.55556 10.3162 9.40444 10.5651 9.22667L11.4184 8.69333C11.7029 8.69333 11.9606 8.73778 12.1918 8.82667C12.4229 8.91556 12.6184 9.04 12.7784 9.2C12.9384 9.36 13.0895 9.56444 13.2318 9.81333C13.374 10.0622 13.4895 10.32 13.5784 10.5867C13.6673 10.8533 13.7384 11.1467 13.7918 11.4667C13.8451 11.7867 13.8895 12.0889 13.9251 12.3733V13.2267C13.9251 13.7956 13.7651 14.24 13.4451 14.56Z"
+                                                  fill="#1A1A1A"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_0_1237">
+                                                <rect width="15.95" height="16" fill="white" transform="matrix(1 0 0 -1 0.216797 16)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    +68 685 88666
+                                    <svg class="ms-2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4 20.5C12.5778 20.5 10.8 20.1667 9.06667 19.5C7.24444 18.7889 5.63333 17.7222 4.23333 16.3C2.83333 14.8778 1.75556 13.2556 1 11.4333C0.333333 9.7 0 7.92222 0 6.1C0 5.07778 0.255556 4.14444 0.766667 3.3C1.27778 2.45555 1.95556 1.77778 2.8 1.26667C3.64444 0.755554 4.57778 0.499998 5.6 0.499998C5.86667 0.499998 6.04444 0.633333 6.13333 0.9L8.66667 7.16667C8.71111 7.3 8.7 7.44444 8.63333 7.6C8.56667 7.75556 8.46667 7.85555 8.33333 7.9L5.6 9.03333C5.64444 10.0556 5.93333 11.0111 6.46667 11.9C7 12.7889 7.71111 13.5 8.6 14.0333C9.48889 14.5667 10.4444 14.8556 11.4667 14.9L12.6 12.1667C12.6444 12.0333 12.7444 11.9333 12.9 11.8667C13.0556 11.8 13.2 11.7889 13.3333 11.8333L19.6 14.3667C19.8667 14.4556 20 14.6333 20 14.9C20 15.9222 19.7444 16.8556 19.2333 17.7C18.7222 18.5444 18.0444 19.2222 17.2 19.7333C16.3556 20.2444 15.4222 20.5 14.4 20.5ZM5.2 1.7C4.08889 1.78889 3.14444 2.25555 2.36667 3.1C1.58889 3.94444 1.2 4.94444 1.2 6.1C1.2 7.87778 1.53333 9.56667 2.2 11.1667C2.86667 12.7667 3.82222 14.1889 5.06667 15.4333C6.31111 16.6778 7.73333 17.6333 9.33333 18.3C10.9333 18.9667 12.6222 19.3 14.4 19.3C15.5556 19.3 16.5556 18.9111 17.4 18.1333C18.2444 17.3556 18.7111 16.4111 18.8 15.3L13.4667 13.1667L12.4 15.7667C12.3111 15.9889 12.1333 16.1 11.8667 16.1C10.5333 16.1 9.28889 15.7667 8.13333 15.1C6.97778 14.4333 6.06667 13.5222 5.4 12.3667C4.73333 11.2111 4.4 9.96667 4.4 8.63333C4.4 8.36667 4.51111 8.18889 4.73333 8.1L7.33333 7.03333L5.2 1.7Z"
+                                              fill="#00092C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End Navbar Section-->
+
+            <!--Start Hero Section-->
+            <section class="hero-image">
+                <div class="container">
+                    <div class="hero-box">
+                        <div class="box">
+                            <div class="image-box">
+                                <img src="./assets/images/show_page_hero_img.png" alt="Hero Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Hero Section-->
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Start Content Section-->
+    <section class="content">
+        <div class="container">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="title">عنوان المقال أو الخبر الرئيسي</h2>
+                    <div class="date">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.28906 12.7979C1.28906 5.14569 3.67296 2.5957 10.8226 2.5957C17.9732 2.5957 20.3571 5.14569 20.3571 12.7979C20.3571 20.45 17.9732 23 10.8226 23C3.67296 23 1.28906 20.45 1.28906 12.7979Z"
+                                  stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.57303 9.00024H20.085" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.3523 13.3313H15.3616" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.8274 13.3313H10.8366" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.29544 13.3313H6.30469" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.3523 17.5676H15.3616" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.8274 17.5676H10.8366" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.29544 17.5676H6.30469" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.9449 0.999023V4.58749" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.70973 0.999023V4.58749" stroke="#565251" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <span>21 فبراير - الأربعاء - 2024</span>
+                    </div>
+                    <p class="description">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                        من
+                        النصوص الأخرى إضافة>>> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                        العديد
+                        من النصوص الأخرى إضافة ....هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                        العديد من النصوص الأخرى إضافة ....هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                        النص
+                        أو العديد من النصوص الأخرى إضافة ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                        النص أو العديد من النصوص الأخرى إضافة .....هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                        هذا النص أو العديد من النصوص الأخرى إضافة .....هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+                        تولد
+                        مثل هذا النص أو العديد من النصوص الأخرى إضافة ..... هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                        أن
+                        تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة .......هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                        يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                        حيث
+                        يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة..... هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                        العربى،
+                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Content Section-->
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Start Footer Section-->
+    <footer>
+        <!--            <img src="./assets/images/footer_before_img.png" alt="Footer Overlay Image" class="overlay">-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class=" box col-lg-4 col-md-6">
+                    <p class="description">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                        النصوص
+                        الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                    <div class="social-box">
+                        <a href="#" class="item"><i class="fas fa-phone-alt"></i></a>
+                        <a href="#" class="item"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="#" class="item"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="item"><i class="fas fa-clock"></i></a>
+                    </div>
+                </div>
+                <div class=" box col-xl-2 text-center col-lg-4 col-md-6">
+                    <h3 class="title mb-4">الصفحة الرئيسية</h3>
+                    <ul class="links">
+                        <li><a href="#">قالوا عنا </a></li>
+                        <li><a href="#">الانشطة </a></li>
+                        <li><a href="#">التبرعات </a></li>
+                        <li><a href="#">الخدمات </a></li>
+                    </ul>
+                </div>
+                <div class=" box col-xl-2 text-center col-lg-4 col-md-6 mt-lg-0 mt-4">
+                    <h3 class="title mb-4">اقسام التبرع</h3>
+                    <ul class="links">
+                        <li><a href="#">عن الجمعية </a></li>
+                        <li><a href="#">التبرعات العاجلة </a></li>
+                        <li><a href="#">البرامج</a></li>
+                        <li><a href="#">السياسات</a></li>
+                    </ul>
+                </div>
+                <div class=" box col-xl-4 text-center col-lg-4 col-md-6 mt-xl-0 mt-4">
+                    <h3 class="title mb-4">تابع اخر الاخبار الخاصة بنا</h3>
+                    <div class="social-box mb-5">
+                        <a href="#" class="item"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="item"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="item"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="item"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <h3 class="title mb-2">وسائل الدفع المتاحة</h3>
+                    <img src="./assets/images/payments.png" alt="Payments Image" class="payment-image">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer Section-->
+</div>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--Start Scripts-->
+<script src="assets/plugins/jquery.min.js"></script>
+<script src="assets/plugins/fontawesome/js/all.min.js"></script>
+<script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
