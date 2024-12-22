@@ -24,41 +24,37 @@
 
 <!--Start Section-->
 <div class="container-fluid px-0">
-    <section class="auth-sec login">
+    <section class="auth-sec confirm-email">
         <div class="right-sec">
             <div class="content">
                 <div class="top-box">
                     <a href="#" class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
                     </a>
-                    <h2 class="title">الدخول إلى حسابك</h2>
-                    <p class="description">مرحبا بك يرجى ادخال البيانات</p>
+                    <h2 class="title">تأكيد البريد الالكتروني</h2>
+                    <p class="description">
+                        لقد ارسلنا رمز تحقق الي بريدك الالكتروني
+                        <span class="d-block mt-2">majal@g.com</span>
+                    </p>
                 </div>
                 <div class="middle-box">
                     <form action="#" method="post">
-                        <div class="mb-3">
-                            <label for="LoginEmailInput" class="form-label">الإيميل</label>
-                            <input type="email" name="email" class="form-control custom-form-control" id="LoginEmailInput" placeholder="ادخل ايميلك">
-                        </div>
-                        <div class="mb-3">
-                            <label for="LoginPasswordInput" class="form-label">كلمة المرور</label>
-                            <input type="password" name="password" class="form-control custom-form-control" id="LoginPasswordInput" placeholder="*******">
-                        </div>
-                        <div class="mb-4 d-flex align-items-center justify-content-between">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label ms-2" for="flexCheckDefault">
-                                    تذكرني
-                                </label>
-                            </div>
-                            <a href="forget_password_step1.html" class="forget-password">نسيت كلمة المرور</a>
+                        <div class="mb-4 d-flex align-items-center justify-content-center otp-box">
+                            <input type="text" name="otp[]" maxlength="1" class="form-control otp-input text-center ms-2"
+                                   oninput="this.value = this.value.match(/^[0-9]*$/) ? this.value : ''" required>
+                            <input type="text" name="otp[]" maxlength="1" class="form-control otp-input text-center ms-2"
+                                   oninput="this.value = this.value.match(/^[0-9]*$/) ? this.value : ''" required>
+                            <input type="text" name="otp[]" maxlength="1" class="form-control otp-input text-center ms-2"
+                                   oninput="this.value = this.value.match(/^[0-9]*$/) ? this.value : ''" required>
+                            <input type="text" name="otp[]" maxlength="1" class="form-control otp-input text-center"
+                                   oninput="this.value = this.value.match(/^[0-9]*$/) ? this.value : ''" required>
                         </div>
                         <div class="mb-4">
-                            <button type="submit" class="btn form-submit">تسجيل دخول</button>
+                            <button type="submit" class="btn form-submit">المتابعة</button>
                         </div>
-                        <div class="mb-3 register-link">
-                            <span>ليس لديك حساب؟</span>
-                            <a href="register.html">سجل حساب</a>
+                        <div class="mb-3 confirm-email-link">
+                            <span> لم يصلك رمز؟</span>
+                            <a href="#">إعادة ارسال الرمز</a>
                         </div>
                     </form>
                 </div>
@@ -69,9 +65,9 @@
             </div>
         </div>
         <div class="left-sec">
-                <img src="./assets/images/left_box_before.png" alt="Auth Image" class="left-box-before">
-                <img src="./assets/images/auth_img.png" alt="Auth Image" class="auth-img">
-                <img src="./assets/images/left_box_after.png" alt="Auth Image" class="left-box-after">
+            <img src="./assets/images/left_box_before.png" alt="Auth Image" class="left-box-before">
+            <img src="./assets/images/auth_img.png" alt="Auth Image" class="auth-img">
+            <img src="./assets/images/left_box_after.png" alt="Auth Image" class="left-box-after">
         </div>
     </section>
 </div>
