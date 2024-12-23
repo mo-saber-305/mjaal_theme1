@@ -38,16 +38,6 @@ img {
     font-weight: 600;
 }
 
-.features .title-box .title,
-.partners .title-box .title,
-.testimonials .title-box .title,
-.website-control .title-box .title,
-.donations .title-box .title,
-.faq .title-box .title {
-    font-size: 28px;
-    font-weight: 600;
-}
-
 .modal .modal-dialog {
     max-width: 600px;
 }
@@ -729,6 +719,372 @@ header .hero .hero-box .owl-dots button.active span {
 }
 
 /*************************************************************************************************************************************************************************/
+/**** Start Donations ****/
+/*************************************************************************************************************************************************************************/
+
+.donations {
+    margin-bottom: 50px;
+}
+
+.donations .top-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.donations .top-box .right {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.donations .top-box .right .title-box {
+    margin-left: 40px;
+}
+
+.donations .top-box .right .title-box .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.donations .top-box .right .title-box .description {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 0;
+}
+
+.donations .top-box .right .cats,
+.donations .top-box .bottom .cats {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.donations .top-box .right .cat,
+.donations .top-box .bottom .cat {
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.donations .top-box .right .cat:hover,
+.donations .top-box .bottom .cat:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.donations .top-box .right .cat:last-of-type,
+.donations .top-box .bottom .cat:last-of-type {
+    margin-left: 0;
+}
+
+.donations .top-box .left .read-more {
+    padding: 8px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.donations .top-box .left .read-more i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.donations .top-box .bottom {
+    display: none;
+}
+
+.donations .bottom-box .donation {
+    border-radius: 20px;
+    border: 1px solid #dfdada;
+}
+
+.donations .bottom-box .donation .image-box {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+
+.donations .bottom-box .donation .image-box .sharing-box {
+    background-color: #00000073;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px 0 0 10px;
+    display: none;
+}
+
+.donations .bottom-box .donation:hover .image-box .sharing-box {;
+    display: block;
+}
+
+.donations .bottom-box .donation .image-box .sharing-box .link {
+    padding-inline: 5px;
+}
+
+.donations .bottom-box .donation .image-box .sharing-box .link img {
+    width: 20px;
+}
+
+.donations .bottom-box .donation {
+    position: relative;
+}
+
+.donations .bottom-box .donation.completed .completed-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffd9;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.donations .bottom-box .donation .content {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+
+.donations .bottom-box .donation .content .donation-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 25px;
+}
+
+.donations .bottom-box .donation .content .donation-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.donations .bottom-box .donation .content .top {
+    position: absolute;
+    padding: 20px 20px 10px;
+    box-shadow: 0 3px 9px 0 #0000000F;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    top: -50px;
+}
+
+.donations .bottom-box .donation .content .progress-box {
+    position: relative;
+    padding-block: 10px;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress {
+    border-radius: 30px;
+    height: 10px;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress .progress-text {
+    position: absolute;
+    top: -13px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress .progress-bar {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.yellow-progress .progress-bar {
+    background-color: #FA9201;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.red-progress .progress-bar {
+    background-color: var(--primary-color);
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.green-progress .progress-bar {
+    background-color: #23AA02;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress .progress-circle {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.yellow-progress .progress-circle {
+    border: 2px solid #FA9201;
+    background-color: #FFFFFF;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.green-progress .progress-circle {
+    border: 2px solid #23AA02;
+    background-color: #FFFFFF;
+}
+
+.donations .bottom-box .donation .content .progress-box .progress.red-progress .progress-circle {
+    border: 2px solid var(--primary-color);
+    background-color: #FFFFFF;
+}
+
+.donations .bottom-box .donation .content .collect {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.donations .bottom-box .donation .content .collect span {
+    color: var(--primary-color);
+}
+
+.donations .bottom-box .donation .content .shares-box {
+    position: relative;
+    padding-inline: 16px;
+}
+
+.donations .bottom-box .donation .content .shares-box .item .share {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.donations .bottom-box .donation .content .shares-box .item.active .share {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.donations .bottom-box .donation .content .shares-box .owl-stage {
+    padding-right: 0 !important;
+}
+
+.donations .bottom-box .donation .content .shares-box .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+.donations .bottom-box .donation .content .shares-box .owl-nav .owl-prev {
+    position: absolute;
+    right: -10px;
+    font-size: 25px;
+    color: #B3B3B3;
+}
+
+.donations .bottom-box .donation .content .shares-box .owl-nav .owl-next {
+    position: absolute;
+    left: -10px;
+    font-size: 25px;
+    color: #B3B3B3;
+}
+
+.donations .bottom-box .donation .content .shares-box .owl-nav .owl-next:hover,
+.donations .bottom-box .donation .content .shares-box .owl-nav .owl-prev:hover {
+    background-color: transparent;
+}
+
+.donations .bottom-box .donation .content form {
+    margin-top: 20px;
+}
+
+.donations .bottom-box .donation .content form .form-label {
+    color: var(--gray-color);
+}
+
+.donations .bottom-box .donation .content form .input-group .number-input {
+    border: 1px solid #0000001A;
+    border-left: 0;
+    direction: rtl;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+}
+
+.donations .bottom-box .donation .content form .input-group .number-input:focus {
+    box-shadow: none;
+}
+
+.donations .bottom-box .donation .content form .input-group .input-group-text {
+    border: 1px solid #0000001A;
+    background: none;
+    color: var(--gray-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.donations .bottom-box .donation .content form .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.donations .bottom-box .donation .content form .actions .add-cart-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donations .bottom-box .donation .content form .actions .donation-btn {
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donations .bottom-box .donation .content form .actions .btn i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/*************************************************************************************************************************************************************************/
 /**** Start Categories ****/
 /*************************************************************************************************************************************************************************/
 
@@ -780,6 +1136,100 @@ header .hero .hero-box .owl-dots button.active span {
     font-weight: bold;
     margin-bottom: 0;
     margin-top: 10px;
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start SMS Donations ****/
+/*************************************************************************************************************************************************************************/
+
+.sms-donations {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.sms-donations .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sms-donations .description {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 22px;
+}
+
+.sms-donations .bottom {
+    margin-inline: 50px;
+}
+
+.sms-donations .donations-box {
+    display: flex;
+    align-items: center;
+}
+
+.sms-donations .donations-box .owl-stage-outer {
+    padding-block: 30px;
+}
+
+.sms-donations .donations-box .owl-item.active.center {
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+.sms-donations .donations-box .donation img {
+    height: 300px;
+}
+
+.sms-donations .donations-box .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+.sms-donations .donations-box .owl-nav .owl-next {
+    position: absolute;
+    left: -50px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.sms-donations .donations-box .owl-nav .owl-prev {
+    position: absolute;
+    right: -50px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.sms-donations .donations-box .owl-nav button:hover {
+    background: none;
+}
+
+.sms-donations .donations-box .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sms-donations .donations-box .owl-dots button span {
+    width: 25px;
+    height: 8px;
+    background-color: #D7D7D7;
+}
+
+.sms-donations .donations-box .owl-dots button.active span {
+    background-color: var(--primary-color);
+    height: 10px;
 }
 
 /*************************************************************************************************************************************************************************/
@@ -840,3 +1290,582 @@ header .hero .hero-box .owl-dots button.active span {
     margin-bottom: 0;
 }
 
+/*************************************************************************************************************************************************************************/
+/**** Start Gifts ****/
+/*************************************************************************************************************************************************************************/
+
+.gifts {
+    margin-bottom: 50px;
+}
+
+.gifts .top-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gifts .top-box .right {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.gifts .top-box .right .title-box {
+    margin-left: 40px;
+}
+
+.gifts .top-box .right .title-box .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.gifts .top-box .right .title-box .description {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 0;
+}
+
+.gifts .top-box .left .read-more {
+    padding: 8px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.gifts .top-box .left .read-more i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.gifts .top-box .bottom {
+    display: none;
+}
+
+.gifts .bottom-box .gift {
+    border-radius: 20px;
+    border: 1px solid #dfdada;
+}
+
+.gifts .bottom-box .gift .image-box {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+
+.gifts .bottom-box .gift .image-box .sharing-box {
+    background-color: #00000073;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px 0 0 10px;
+    display: none;
+}
+
+.gifts .bottom-box .gift:hover .image-box .sharing-box {;
+    display: block;
+}
+
+.gifts .bottom-box .gift .image-box .sharing-box .link {
+    padding-inline: 5px;
+}
+
+.gifts .bottom-box .gift .image-box .sharing-box .link img {
+    width: 20px;
+}
+
+.gifts .bottom-box .gift {
+    position: relative;
+}
+
+.gifts .bottom-box .gift.completed .completed-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffd9;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.gifts .bottom-box .gift .content {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+
+.gifts .bottom-box .gift .content .gift-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 25px;
+}
+
+.gifts .bottom-box .gift .content .gift-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.gifts .bottom-box .gift .content .top {
+    position: absolute;
+    padding: 20px 20px 10px;
+    box-shadow: 0 3px 9px 0 #0000000F;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    top: -50px;
+}
+
+.gifts .bottom-box .gift .content .progress-box {
+    position: relative;
+    padding-block: 10px;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress {
+    border-radius: 30px;
+    height: 10px;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress .progress-text {
+    position: absolute;
+    top: -13px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress .progress-bar {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.yellow-progress .progress-bar {
+    background-color: #FA9201;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.red-progress .progress-bar {
+    background-color: var(--primary-color);
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.green-progress .progress-bar {
+    background-color: #23AA02;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress .progress-circle {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.yellow-progress .progress-circle {
+    border: 2px solid #FA9201;
+    background-color: #FFFFFF;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.green-progress .progress-circle {
+    border: 2px solid #23AA02;
+    background-color: #FFFFFF;
+}
+
+.gifts .bottom-box .gift .content .progress-box .progress.red-progress .progress-circle {
+    border: 2px solid var(--primary-color);
+    background-color: #FFFFFF;
+}
+
+.gifts .bottom-box .gift .content .collect {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.gifts .bottom-box .gift .content .collect span {
+    color: var(--primary-color);
+}
+
+.gifts .bottom-box .gift .content .shares-box {
+    position: relative;
+    padding-inline: 16px;
+}
+
+.gifts .bottom-box .gift .content .shares-box .item .share {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.gifts .bottom-box .gift .content .shares-box .item.active .share {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.gifts .bottom-box .gift .content .shares-box .owl-stage {
+    padding-right: 0 !important;
+}
+
+.gifts .bottom-box .gift .content .shares-box .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+.gifts .bottom-box .gift .content .shares-box .owl-nav .owl-prev {
+    position: absolute;
+    right: -10px;
+    font-size: 25px;
+    color: #B3B3B3;
+}
+
+.gifts .bottom-box .gift .content .shares-box .owl-nav .owl-next {
+    position: absolute;
+    left: -10px;
+    font-size: 25px;
+    color: #B3B3B3;
+}
+
+.gifts .bottom-box .gift .content .shares-box .owl-nav .owl-next:hover,
+.gifts .bottom-box .gift .content .shares-box .owl-nav .owl-prev:hover {
+    background-color: transparent;
+}
+
+.gifts .bottom-box .gift .content form {
+    margin-top: 20px;
+}
+
+.gifts .bottom-box .gift .content form .form-label {
+    color: var(--gray-color);
+}
+
+.gifts .bottom-box .gift .content form .input-group .number-input {
+    border: 1px solid #0000001A;
+    border-left: 0;
+    direction: rtl;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+}
+
+.gifts .bottom-box .gift .content form .input-group .number-input:focus {
+    box-shadow: none;
+}
+
+.gifts .bottom-box .gift .content form .input-group .input-group-text {
+    border: 1px solid #0000001A;
+    background: none;
+    color: var(--gray-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.gifts .bottom-box .gift .content form .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gifts .bottom-box .gift .content form .actions .add-cart-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gifts .bottom-box .gift .content form .actions .gift-btn {
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gifts .bottom-box .gift .content form .actions .btn i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start Gifts ****/
+/*************************************************************************************************************************************************************************/
+
+.videos-sec {
+    margin-bottom: 50px;
+    background-image: url("../images/videos_bg.png");
+    background-size: 100% 100%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.videos-sec .videos-box {
+    position: relative;
+}
+
+.videos-sec .videos-box .video .item {
+    width: 50%;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.videos-sec .videos-box .video .item .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.videos-sec .videos-box .video .item .box {
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.videos-sec .videos-box .video .item .title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--gray-color);
+    margin-bottom: 0;
+}
+
+.videos-sec .videos-box .video .item .description {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.videos-sec .videos-box .video .item .sharing-box {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.videos-sec .videos-box .video .item .sharing-box .link {
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.videos-sec .videos-box .video .item .sharing-box .link:last-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.videos-sec .videos-box .video .item .sharing-box .link:after {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    content: '';
+    height: 22px;
+    width: 1px;
+    background-color: #FFFFFF;
+}
+
+.videos-sec .videos-box .video .item .sharing-box .link:last-of-type:after {
+    display: none;
+}
+
+.videos-sec .videos-box .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+.videos-sec .videos-box .owl-nav .owl-next {
+    position: absolute;
+    left: -50px;
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.videos-sec .videos-box .owl-nav .owl-prev {
+    position: absolute;
+    right: -50px;
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.videos-sec .videos-box .owl-nav button:hover {
+    background: none;
+}
+
+.videos-sec .videos-box .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos-sec .videos-box .owl-dots button span {
+    width: 25px;
+    height: 8px;
+    background-color: #D7D7D7;
+}
+
+.videos-sec .videos-box .owl-dots button.active span {
+    background-color: var(--white-color);
+    height: 10px;
+}
+
+/*************************************************************************************************************************************************************************/
+/**** Start Testimonials ****/
+/*************************************************************************************************************************************************************************/
+
+.testimonials {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.testimonials .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonials .description {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 22px;
+}
+
+.testimonials .testimonials-box .testimonial {
+    text-align: center;
+}
+
+.testimonials .testimonials-box .testimonial .image-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #F49494;
+    margin-inline: auto;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonials-box .testimonial .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonials .testimonials-box .testimonial .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonials .testimonials-box .testimonial .description {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.testimonials .testimonials-box {
+    position: relative;
+}
+
+.testimonials .testimonials-box .owl-stage-outer {
+    padding-block: 40px;
+    /*border: 3px solid #ededed59;*/
+    /*border-radius: 20px;*/
+    /*border-top: 0;*/
+    /*border-bottom: 0;*/
+}
+
+/*.testimonials .testimonials-box .owl-item {*/
+/*    width: 25% !important;*/
+/*}*/
+
+.testimonials .testimonials-box .owl-item.center {
+    z-index: 10;
+}
+
+.testimonials .testimonials-box .testimonial {
+    border: 3px solid #ededed59;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.testimonials .testimonials-box .owl-item.center .testimonial {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    position: absolute;
+    width: 200%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.1);
+    top: -20px;
+    padding: 30px;
+    border: none;
+}
+
+.testimonials .testimonials-box .owl-item.center .description {
+    color: var(--white-color);
+}
+
+/*.testimonials .testimonials-box .owl-item.center .image-box {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/

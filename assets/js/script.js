@@ -25,7 +25,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.situations .situations-box .situation .shares-box').owlCarousel({
+    $('.situations .situations-box .situation .shares-box, .donations .bottom-box .donation .shares-box, .gifts .bottom-box .gift .shares-box').owlCarousel({
         margin: 10,
         rtl: true,
         nav: true,
@@ -41,6 +41,14 @@ $(document).ready(function () {
 
     $('.situations .situations-box .situation .content .shares-box .share').on('click', function () {
         $('.situations .situations-box .situation .content .shares-box .item').removeClass('active')
+        var $button = $(this);
+        var $value = $(this).data('value');
+        $button.closest('.item').addClass('active').closest('.content').find('.number-input').val($value);
+
+    })
+
+    $('.donations .bottom-box .donation .content .shares-box .item .share').on('click', function () {
+        $('.donations .bottom-box .donation .content .shares-box .item').removeClass('active')
         var $button = $(this);
         var $value = $(this).data('value');
         $button.closest('.item').addClass('active').closest('.content').find('.number-input').val($value);
@@ -76,6 +84,16 @@ $(document).ready(function () {
             }
 
         }
+    });
+
+    $('.donations .top-box .bottom .cats').owlCarousel({
+        margin: 10,
+        rtl: true,
+        nav: false,
+        dots: false,
+        stagePadding: 15,
+        responsiveClass: true,
+        autoWidth: true,
     });
 
     function activateCarousel() {
@@ -119,5 +137,75 @@ $(document).ready(function () {
     // Recheck on window resize
     $(window).resize(function () {
         activateCarousel();
+    });
+
+    $('.sms-donations .donations-box').owlCarousel({
+        loop: true,
+        margin: 0,
+        rtl: true,
+        nav: true,
+        dots: true,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        stagePadding: 0,
+        navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>',
+        ],
+        responsive: {
+            0: {
+                items: 3
+            }
+        }
+    });
+
+    $('.testimonials .testimonials-box').owlCarousel({
+        loop: true,
+        // margin: 30,
+        rtl: true,
+        nav: true,
+        dots: true,
+        center: true,
+        // autoplay: true,
+        // autoplayTimeout: 5000,
+        // autoplayHoverPause: true,
+        // responsiveClass: true,
+        // autoWidth:true,
+
+        // stagePadding: 200,
+        navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>',
+        ],
+        responsive: {
+            0: {
+                items: 3
+            }
+        },
+    });
+
+    $('.videos-sec .videos-box').owlCarousel({
+        loop: true,
+        margin: 0,
+        rtl: true,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        stagePadding: 0,
+        navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>',
+        ],
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
     });
 });
