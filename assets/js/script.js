@@ -45,7 +45,7 @@ $(document).ready(function () {
         var $value = $(this).data('value');
         $button.closest('.item').addClass('active').closest('.content').find('.number-input').val($value);
 
-    })
+    });
 
     $('.donations .bottom-box .donation .content .shares-box .item .share').on('click', function () {
         $('.donations .bottom-box .donation .content .shares-box .item').removeClass('active')
@@ -53,7 +53,7 @@ $(document).ready(function () {
         var $value = $(this).data('value');
         $button.closest('.item').addClass('active').closest('.content').find('.number-input').val($value);
 
-    })
+    });
 
     $('.quick-donation .donation-box').owlCarousel({
         loop: true,
@@ -83,6 +83,20 @@ $(document).ready(function () {
                 items: 4,
             }
 
+        }
+    });
+
+    $('.auth-sec .right-sec .middle-box .otp-box .otp-input').on('input', function () {
+        if ($(this).val().length === 1) {
+            // Move to the next input if it exists
+            $(this).next('.otp-input').focus();
+        }
+    });
+
+    $('.auth-sec .right-sec .middle-box .otp-box .otp-input').on('keydown', function (e) {
+        if (e.key === 'Backspace' && $(this).val() === '') {
+            // Move to the previous input if it exists
+            $(this).prev('.otp-input').focus();
         }
     });
 
@@ -131,12 +145,11 @@ $(document).ready(function () {
         }
     }
 
-    // Initial check
-    activateCarousel();
-
-    // Recheck on window resize
-    $(window).resize(function () {
-        activateCarousel();
+    $('.auth-sec .right-sec .middle-box .otp-box .otp-input').on('keydown', function (e) {
+        if (e.key === 'Backspace' && $(this).val() === '') {
+            // Move to the previous input if it exists
+            $(this).prev('.otp-input').focus();
+        }
     });
 
     $('.sms-donations .donations-box').owlCarousel({

@@ -27,43 +27,6 @@
     .situations .situations-box .situation .content {
         width: calc(100% - 350px);
     }
-
-    .donations .top-box {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .donations .top-box .right {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 0;
-    }
-
-    .donations .top-box .right .cats {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .donations .top-box .right .cat {
-        margin-block: 10px;
-    }
-
-    .donations .top-box .right .title-box {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .donations .top-box .left {
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .donations .top-box .left .read-more {
-        display: inline-flex;
-    }
 }
 
 
@@ -137,51 +100,6 @@
     .situations .situations-box .situation .content {
         width: calc(100% - 300px);
     }
-
-    .donations .top-box {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .donations .top-box .right {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 0;
-    }
-
-    .donations .top-box .right .cats {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .donations .top-box .right .cat {
-        margin-block: 10px;
-    }
-
-    .donations .top-box .right .title-box {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .donations .top-box .left {
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .donations .top-box .left .read-more {
-        display: inline-flex;
-    }
-
-    .sms-donations .donations-box .donation img {
-        height: 200px;
-    }
-
-    .videos-sec .videos-box .video .item {
-        width: 100%;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -205,87 +123,11 @@
         border-top-left-radius: 20px;
     }
 
-    .situations .situations-box .situation .image-box .sharing-box ,
-    .donations .bottom-box .donation .image-box .sharing-box ,
-    .gifts .bottom-box .gift .image-box .sharing-box {
+    .situations .situations-box .situation .image-box .sharing-box {
         display: block;
     }
 
-    .situations .situations-box .situation .content ,
-    .donations .bottom-box .donation  .content {
-        width: 100%;
-    }
-
-    .donations .top-box ,
-    .gifts .top-box {
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .donations .top-box .right {
-        justify-content: start;
-        flex-wrap: nowrap;
-        margin-left: 20px;
-    }
-
-    .donations .top-box .right .cats {
-        display: none;
-    }
-
-    .donations .top-box .bottom {
-        display: block;
-        max-width: 100%;
-    }
-
-    .donations .top-box .bottom .cats .owl-stage-outer {
-        padding-block: 20px;
-    }
-
-    .donations .top-box .left {
-        margin-top: 0;
-        width: unset;
-        text-align: center;
-    }
-
-    .donations .top-box .left .read-more ,
-    .gifts .top-box .left .read-more {
-      padding-inline: 20px;
-        display: inline-flex;
-    }
-
-    .donations .bottom-box .donation .content .donation-title ,
-    .gifts .bottom-box .gift .content .gift-title {
-        margin-top: 0;
-    }
-
-    .donations .bottom-box .donation .content .top ,
-    .gifts .bottom-box .gift .content .top {
-        position: relative;
-        padding: 10px 0 20px;
-        box-shadow: unset;
-        background-color: #FFFFFF;
-        border-radius: 0;
-        left: unset;
-        transform: unset;
-        width: 100%;
-        top: unset;
-    }
-
-    .donations .bottom-box .donation .content .collect ,
-    .gifts .bottom-box .gift .content .collect {
-        text-align: start;
-    }
-
-    .gifts .top-box .right {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .gifts .top-box .left {
-        margin-top: 20px;
-        text-align: center;
+    .situations .situations-box .situation .content {
         width: 100%;
     }
 }
@@ -308,79 +150,24 @@
         display: block;
     }
 
-    .donations .bottom-box .donation .content {
-        padding: 16px;
-    }
-
-    .situations .situations-box .situation .content .shares-box .owl-nav ,
-    .donations .bottom-box .donation .content .shares-box .owl-nav {
+    .situations .situations-box .situation .content .shares-box .owl-nav {
         display: none;
     }
 
-    .situations .situations-box .situation .content .shares-box ,
-    .donations .bottom-box .donation .content .shares-box {
+    .situations .situations-box .situation .content .shares-box {
         padding-inline: 0;
     }
 
-    .situations .situations-box .situation .content form .actions ,
-    .donations .bottom-box .donation .content form .actions {
+    .situations .situations-box .situation .content form .actions {
         gap: 10px;
     }
 
-    .situations .situations-box .situation .content form .actions .btn ,
-    .donations .bottom-box .donation .content form .actions .btn {
+    .situations .situations-box .situation .content form .actions .btn {
         font-size: 14px;
         padding-inline: 10px;
     }
 
-    .situations .situations-box .situation .content form .actions .btn i ,
-    .donations .bottom-box .donation .content form .actions .btn i {
-        font-size: 14px;
-    }
-
-    .sms-donations {
-        padding-block: 0 20px;
-    }
-
-    .sms-donations .container {
-        padding-inline: 0;
-    }
-
-    .sms-donations .title ,
-    .sms-donations .description {
-        padding-inline: 16px;
-    }
-
-    .sms-donations .bottom {
-        margin-inline: 0;
-    }
-
-    .sms-donations .donations-box .owl-nav {
-        display: none;
-    }
-
-    .videos-sec {
-        padding-top: 40px;
-        padding-bottom: 75px;
-    }
-
-    .videos-sec .videos-box .video .item {
-        padding: 30px;
-    }
-
-    .videos-sec .videos-box .owl-nav {
-        display: none;
-    }
-
-    .videos-sec .videos-box .owl-dots {
-        bottom: -45px;
-    }
-
-    .videos-sec .videos-box .video .item .title {
-        font-size: 20px;
-    }
-
-    .videos-sec .videos-box .video .item .description {
+    .situations .situations-box .situation .content form .actions .btn i {
         font-size: 14px;
     }
 
